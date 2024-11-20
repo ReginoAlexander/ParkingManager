@@ -5,6 +5,7 @@
 package parkingManager;
 
 import java.awt.BorderLayout;
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import pantallas.admin;
 import pantallas.ingresosalida;
@@ -17,11 +18,14 @@ import pantallas.metodos;
  * @author regin
  */
 public class mainScreen extends javax.swing.JFrame {
-
+    ImageIcon icono;
     /**
      * Creates new form mainScreen
      */
     public mainScreen() {
+        setTitle("ParkingManager - Sistema de administracion de estacionamiento");
+        icono = new ImageIcon("./src/imagenes/ParkingLogo.png");
+        setIconImage(icono.getImage());
         initComponents();
         setLocationRelativeTo(null);
         InitContent();
