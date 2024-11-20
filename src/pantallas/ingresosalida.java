@@ -197,7 +197,7 @@ public class ingresosalida extends javax.swing.JPanel {
         fechaEntrada = fechaHoraActual.format(formatter);
         
         try{
-            if(placa.equals("") || propietario.equals("")){
+            if(placa.equals("") || placa.equals("PLACA") || propietario.equals("") || propietario.equals("PROPIETARIO")){
                 JOptionPane.showMessageDialog(null, "Ingrese todos los datos");
             }
             else{
